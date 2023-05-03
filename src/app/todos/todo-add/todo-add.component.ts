@@ -20,9 +20,7 @@ export class TodoAddComponent {
 
   add() {
 
-    if ( this.txtInput.invalid ) {
-      return console.error('Invalid task. Please add a valid Todo');
-    };
+    if ( this.txtInput.invalid ) { return; };
 
     this.store.dispatch( addTodo({ text: this.txtInput.value }) );
 
