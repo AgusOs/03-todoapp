@@ -6,3 +6,7 @@ export const setFilter = createAction(
     '[Filter] Set Filter',
     props<{ filter: validFilters }>()
     );
+
+export function clearCompleted(): any {
+  throw new Error('Function not implemented.');
+}
